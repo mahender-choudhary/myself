@@ -103,3 +103,39 @@
     font-size: 15px;
     margin: 1em 0;
 }
+
+.project-heading{
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+}
+
+
+.random-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0;
+  }
+  .rc-1 {
+    display: block;
+    text-align: center;
+    width: 19%;
+    border: 10px solid rgb(211, 208, 208);
+    padding: 1em 0;
+    box-shadow: 3px 5px 5px rgb(91, 91, 91);
+  }
+  .rc-1 i {
+    font-size: 2em;
+    background-color: rgb(17, 168, 239);
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  .rc-1 h2 {
+    font-family: verdana;
+    font-size: 1em;
+  }
+  .rc-1 a {
+    text-decoration: none;
+    color: rgb(17, 168, 239);
+  }
