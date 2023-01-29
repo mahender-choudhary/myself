@@ -33,8 +33,37 @@
     font-weight: bold;
     background-color: rgb(15, 113, 170);
     padding: 1em;
+    text-align: center;
+    
+}
+#intro{
+    font-size: 60px;
+}
+.about-me{
+    margin: 2em 0;
 }
 
 .btn{
     background-color: rgb(15, 113, 170);
+    border: 1px solid white;
+    padding: 4px 17px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+.xtra-info{
+    display: flex;
+}
+
+.u-tube{
+    width: 50%;
+    background-color: aliceblue;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.imgs img{
+    width: 100%;
+    border-radius: 17px;
 }
