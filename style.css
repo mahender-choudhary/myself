@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav-bar{
+    display: flex;
+    background-color: rgb(77, 137, 145);
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    font-family: 'Brush Script MT', cursive;
+    color: rgb(74, 20, 108);
+}
+
+
+.nav-ul{
+    list-style: none;
+    display: flex;
+    margin-left: 2em;
+}
+
+.nav-li{
+    padding: 1em;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+}
+.user-info{
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(15, 113, 170);
+    padding: 1em;
+}
+
+.btn{
+    background-color: rgb(15, 113, 170);
+}
