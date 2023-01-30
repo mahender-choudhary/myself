@@ -26,6 +26,11 @@
   font-weight: 600;
   font-size: 17px;
 }
+.sm-change{
+  color: rgb(241, 241, 241);
+  font-size: 20px;
+  margin: 0.5em;
+}
 .user-info {
   font-family: sans-serif;
   color: white;
@@ -98,7 +103,7 @@
 }
 
 .u-tube-btn {
-  background-color: red;
+  background-color: rgb(184, 36, 36);
   border: 1px solid red;
   border-radius: 9px;
   padding: 5px 11px;
