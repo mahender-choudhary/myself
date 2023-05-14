@@ -45,4 +45,13 @@
     .container {
       font-size: 12px;
     }
+    .user-info{
+        display: block;
+    }
+    .pro-head{
+        font-size: 1.5em;
+    }
+    .about-me{
+        font-size: 15px;
+    }
 }
