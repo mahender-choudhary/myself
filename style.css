@@ -12,7 +12,7 @@
 .nav-ul {
   list-style: none;
   display: flex;
-  margin-left: 2em;
+  /* margin-left: 2em; */
 }
 
 .nav-anchor {
