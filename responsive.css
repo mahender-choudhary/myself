@@ -64,6 +64,9 @@
     .about-me{
         font-size: 15px;
     }
+    #myimg{
+        width: 80%;
+      }
     .pdf-options{
         display: block;
         padding: 1em 0;
