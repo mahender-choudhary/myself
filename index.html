@@ -1,131 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mahendra Choudhary</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/5a724d24c4.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="responsive.css" />
-  </head>
-  <body>
-    <main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- nav bar -->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-      <nav class="nav-bar">
-        <input type="checkbox" name="checkbox" id="check">
-        <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
-        <ul class="nav-ul">
-          <!-- <li class="nav-li">Home</li> -->
-          <!-- <li class="nav-li">You Tube</li> -->
-          <li class="nav-li"><a class="nav-anchor" href="#jump" rel="contact">Projects</a></li>
-          <li class="nav-li"><a class="nav-anchor" href="contact.html" target="_blank" rel="contact">Contact Me</a></li>
-          <li class="nav-li"><a class="nav-anchor" href="aboutme.html" target="_blank" rel="contact">About Me</a></li>
-        </ul>
-        <!-- <h1 class="logo">Mahendra Choudhary</h1> -->
-        <div class="social-media">
-          <a target="_blank" href="https://www.instagram.com/mahender_choudhary__/"><i class="fa-brands fa-instagram f-social sm-change ig"></i></a>
-          <a target="_blank" href="https://www.youtube.com/@mahendra.choudhary"><i class="fa-brands fa-youtube f-social sm-change yt"></i></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/mahender-choudhary/ "><i class="fa-brands fa-linkedin f-social sm-change lnkd"></i></a>
-          <a target="_blank" href="http://github.com/mahender-choudhary
-          "><i class="fa-brands fa-github f-social sm-change gthb"></i></a>
-        </div>
-      </nav>
-      <hr style="border: 2px solid black;">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Mahendra</a>
+                </div>
 
-      <!-- user-info -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-      <div class="user-info">
-        <div class="container">
-          <img id="myimg" src="mahendra.jpeg" alt="myself">
-        </div>
-        <div class="container1">
-        <h1 class="pro-head">Hi, I'm Mahendra!</h1>
-        <p class="about-me">Developer. Content Creator.</p>
-        <button class="btn1">Work With Me</button>
-        </div>
-      </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-      <!-- my projects -->
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,I'am <br> <span class="home__title-color">Mahendra Choudhary</span><br> Developer</h1>
 
-      <div id="jump">
-      <h1 class="pro-head"><span style="color: blue;" >Projects</span> I have done or doing</h1>
-      <div class="pdf-options">
-        <div class="po1">
-          <i class="fa-solid fa-house-medical"></i>
-            <p>Hospital Management System</p>
-            <div class="btn">
-                <button class="pdf-btn"><a href="https://mahender-choudhary.github.io/manindracare.github.in/">Click here</a> </button>
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a target="_blank" href="https://www.linkedin.com/in/mahender-choudhary/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a target="_blank" href="https://www.instagram.com/mahender_choudhary__/" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a target="_blank" href="https://github.com/mahender-choudhary" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a target="_blank" href="https://www.youtube.com/@mahendra.choudhary" class="home__social-icon"><i class='bx bxl-youtube' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="30" y="195" href="assets/img/mahendra.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpeg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Mahendra Choudhary</h2>
+                        <p class="about__text">I am an Engineering student, I am pursuing my Btech course in CSE brach from Jodhpur Institute of Engineering & Technology, Jodhpur. currently I am pre final year student and I am doing my internship as data scientist in Celebal Technologies, Jaipur.You can check my LinkedIn profile. Also you can subscribe my You Tube channel.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-python skills__icon'></i>
+                                <span class="skills__name">PYTHON</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">Machine Learning & Data Science</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-data skills__icon' ></i>
+                                <span class="skills__name">Django</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">Frontend(HTML5, CSS3)</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enviar" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Mahendra Choudhary</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-        </div>
-        <div class="po1 split">
-          <i class="fa-sharp fa-solid fa-italic"></i>
-            <p>Text Analyzer</p>
-            <div class="btn">
-                <button class="pdf-btn"><a href="https://github.com/mahender-choudhary/django.github.in">Click here</a> </button>
-            </div>
-        </div>
-        <div class="po1 com">
-            <i class="fa-solid fa-file-pdf"></i>
-            <p>PDF converter</p>
-            <div class="btn">
-                <button class="pdf-btn"><a href="https://mahender-choudhary.github.io/pdf-converter.github.io/">Click here</a> </button>
-            </div>
-        </div>
-        <div class="po1">
-          <i class="fa-solid fa-code"></i>
-            <p>My own website</p>
-            <div class="btn">
-                <button class="pdf-btn"><a href="https://mahender-choudhary.github.io/myself/
-                  ">Click here</a> </button>
-            </div>
-        </div>
-    </div>
-
-</div>
+            <p class="footer__copy">Thanks for checking my space :) </p>
+        </footer>
 
 
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-      <!-- you tube  -->
-
-      <h1 class="pro-head">My <span style="color: rgb(203, 17, 17);" >You Tube</span> Channel</h1>
-    <div class="u-tube">
-      <div class="dis">
-        <div class="u-videos">
-          <h2 class="u-head">How to create Navigation Bar</h2>
-        <iframe class = 'video-size' width="380" height="315"
-        src="https://www.youtube.com/embed/RekY9tbUqf4">
-</iframe>
-</div>
-<div class="u-videos">
-  <h2 class="u-head">Web development complete roadmap</h2>
-<iframe class = 'video-size' width="380" height="315"
-src="https://www.youtube.com/embed/Qil-bRdDLLo">
-</iframe>
-</div>
-<div class="u-videos">
-  <h2 class="u-head">Python playlist for beginners</h2>
-<iframe class = 'video-size' width="380" height="315"
-src="https://www.youtube.com/embed/playlist?list=PLgP2kmkUY2Rlb1X00uGii98b1HHNxRDzO">
-</iframe>
-</div>
-      </div>
-    </div>
-    </main> 
-
-<!-- footer part -->
-
-<footer class="my-footer" >
-  <div class="footer-div">
-    <p class="aboutme">Thanks for watching my space :)</p>
-  </div>
-</footer>
-
-  </body>
-</html> 
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
